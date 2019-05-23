@@ -1,0 +1,10 @@
+---
+version: "3"
+services:
+  aircast:
+    build:
+      context: .
+    image: aircast
+    container_name: aircast
+    network_mode: host
+    restart: unless-stopped
